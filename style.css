@@ -1,0 +1,49 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", 
+    "Lucida Sans", Arial, sans-serif; /* Добавляем шрифт всей странице */
+}
+ .nav-link:hover{ /* добавляем эффект наведения */
+  color: rgb(255, 0, 157) !important; /* добавляем свой цвет тексту и задаем высший приоритет */
+  transition: all 0.9s ease-in-out; /* регулируем плавность изменения цвета */
+}
+.photo-user { /* добавляем этот класс картинке в нав панели */
+  border-radius: 50%; /* скругляем картинку */
+  box-shadow: -2px 0px 5px rgb(255 255 255); /* добавляем тени */
+  transition: all 0.9s ease-in-out; 
+  opacity: 1; /* меняем прозрачность */
+  cursor: pointer; /* меняем курсор */
+}
+.photo-user:hover {
+  box-shadow: -2px 0px 5px rgb(255, 0, 157); 
+  transition: all 0.9s ease-in-out;
+  opacity: 0.5;
+}
+.post-title { /* добавляем этот класс к названию статьи на главной странице */
+  text-align: center; /* делаем текст по центру */
+  padding: 50px 0px 30px; /* проставляем внутренние отступы */
+  font-weight: bold;  /* делаем жирный шрифт  */
+}
+.carousel-item .heightImg { /* образаемся к классу heightImg в классе carousel-item  */
+  height: 500px; /* выставляем высоту */
+  width: 600px; /* выставляем ширину */
+  margin: 0 auto; /* центрируем */
+  border-radius: 15px; /* скругляем края */
+}
+.description {
+  padding: 50px 0px 30px;
+  font-weight: 500; /* изменяем толщину шрифта */
+  font-size: 26px; /* изменяем размер шрифта */
+  line-height: 26px; /* изменяем высоту строки */
+}
+.main {
+  padding: 20px 0;
+  height: calc(100% - 66px - 72px - 40px);
+}
+.cats {
+  grid-gap: clamp(1rem, 2vw, 24px); /* динамически имзеняем промежуток между карточками */
+  display: grid; /* используем сетку */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* задаем размер колонок от 300 пикслей */
+}
+.card{
+  min-height: 580px; /* задаем минимальную высоту карточки */
+}
